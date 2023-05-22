@@ -251,24 +251,7 @@ const heroBg = [
   ];
   
   
-  $(".hero-content").each(function() {
-    
-    
-    const x = $(this).index();
-    
-    $(this).children(".hero-image").css({
-         "background": `url(/images/herobg/${x}.jpg)`,
-
-  "background-size": "cover",
-  "background-position": "center",
-    "background-repeat": "no-repeat"
-      
-      
-    })
-    
-    
-    
-  })
+ 
 
   var screenWidth = $(window).width();
 
