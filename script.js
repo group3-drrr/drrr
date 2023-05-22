@@ -261,13 +261,6 @@ $(".profile").each(function() {
   
 })
 
-const heroBg = [
-
-  "url(/images/fourpics/1/2.jpg)",
-
-  "url(/images/fourpics/0/2.jpg)",
-  "url(/images/fourpics/2/1.jpg)"
-  ];
   
   
  
