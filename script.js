@@ -224,18 +224,7 @@ const description = [
 
 
 
-$(".profile").each(function() {
-  
- const ppp = $(this).index();
- 
- $(this).children(".prof-img-cont").children(".profile-img").css({
-   "background": `url(/images/backgrounds/${[ppp]}.jpg)`,
-  "background-size": "cover",
-  "background-position": "center",
-    "background-repeat": "no-repeat"
 
- 
- })
  
  
  $(this).children(".profile-des").html(`${description[ppp]}`)
