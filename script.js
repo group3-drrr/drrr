@@ -222,6 +222,25 @@ const description = [
   ];
 
 
+        
+         $(".hero-content").each(function() {
+    
+    
+    const x = $(this).index();
+    
+    $(this).children(".hero-image").css({
+         "background": `url(./images/herobg/${x}.jpg)`,
+
+  "background-size": "cover",
+  "background-position": "center",
+    "background-repeat": "no-repeat"
+      
+      
+    })
+    
+    
+    
+  })
 
 
 $(".profile").each(function() {
@@ -229,7 +248,7 @@ $(".profile").each(function() {
  const ppp = $(this).index();
  
  $(this).children(".prof-img-cont").children(".profile-img").css({
-   "background": `url(/images/backgrounds/${[ppp]}.jpg)`,
+   "background": `url(./images/backgrounds/${[ppp]}.jpg)`,
   "background-size": "cover",
   "background-position": "center",
     "background-repeat": "no-repeat"
