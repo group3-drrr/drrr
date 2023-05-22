@@ -281,7 +281,7 @@ const heroBg = [
   
 
 
-      });
+      
 
 
 
