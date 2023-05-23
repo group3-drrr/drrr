@@ -132,7 +132,7 @@ main {
     width: 100%;
     position: absolute;
     height: 100%;
-    background: red;
+    background: linear-gradient(0deg, rgba(22,44,108,1) 0%, rgba(21,75,80,1) 100%);;
     left: 0;
     top: 0;
     z-index: -1;
@@ -233,7 +233,8 @@ main {
 
 
 .next-btn {
-  opacity: 0.3;
+  opacity: 1;
+
 }
 
 .next-btn,
