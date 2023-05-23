@@ -100,6 +100,9 @@ main {
 
 /* Media query for small screens */
 @media (max-width: 768px) {
+
+
+
   .site-nav {
     position: fixed;
     top: 0;
@@ -166,7 +169,8 @@ main {
 }
 
 
-.hero-content {
+.hero-content,
+.hero-content1 {
   background: rgba(0, 0, 0, 0.5);
   height: 90vh;
   position: relative;
@@ -222,9 +226,19 @@ main {
   transform: translateX(0);
 }
 
+.second {
+  transition: 1s all;
+  transform: translateX(0);
+}
+
 
 .next-btn {
   opacity: 0.3;
+}
+
+.next-btn,
+.prev-btn {
+  cursor: pointer;
 }
 
 .correct {
@@ -246,7 +260,7 @@ main {
   height: 100%;
   opacity: 0.2;
   left: 0;
-  background: red;
+  background: green;
   top: 0;
   z-index: 2;
 }
@@ -264,6 +278,12 @@ main {
   width: 100vw;
   padding: 10px;
   align-items: center;
+}
+
+.grid-item,
+.grid-item2 {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .grid-item {
@@ -479,7 +499,7 @@ main {
   color: white;
   z-index: 99;
   text-align: center;
-  transition: all 3s;
+  transition: all 3s, width 0s;
 }
 
 .st-play {
@@ -598,11 +618,13 @@ main {
     font-size: 3rem;
   }
 
-  .hero-content {
+  .hero-content,
+  .hero-content1 {
     align-items: center;
   }
 
-  .hero-content p {
+  .hero-content p,
+  .hero-content1 p {
     text-align: center;
   }
 
@@ -702,7 +724,9 @@ main {
 
 
   .hero-content h1,
-  .hero-content p {
+  .hero-content p,
+  .hero-content1 h1,
+  .hero-content1 p {
     font-size: 2rem;
   }
 
