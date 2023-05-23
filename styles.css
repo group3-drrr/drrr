@@ -150,6 +150,10 @@ main {
   .site-header {
     flex-wrap: wrap;
   }
+
+
+
+
 }
 
 .hero {
@@ -542,6 +546,7 @@ main {
   text-align: justify;
   color: white;
   padding: 20px;
+  font-size: 1.1rem;
 }
 
 
@@ -574,7 +579,20 @@ main {
 }
 
 
-@media (min-width: 769px) {
+.highlight {
+  font-weight: bold;
+  font-size: 2rem;
+  display: block;
+}
+
+
+
+@media (min-width: 1000px) {
+
+  .highlight {
+    font-weight: bold;
+    font-size: 2rem;
+  }
 
   .about-us h1 {
     font-size: 3rem;
@@ -646,10 +664,10 @@ main {
 
   .profile-des {
     width: 100%;
-    height: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 2;
   }
 
