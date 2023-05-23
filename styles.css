@@ -546,7 +546,7 @@ main {
 
 
 
-.profile {
+.profile, .profile1 {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -664,7 +664,7 @@ main {
     scrollbar-color: #f1f1f1 #888;
   }
 
-  .profile {
+  .profile, .profile1 {
 
     flex-direction: row;
     align-items: center;
