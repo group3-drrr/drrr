@@ -275,7 +275,7 @@ $(document).ready(function () {
     const ppp = $(this).index();
 
     $(this).children(".prof-img-cont").children(".profile-img").css({
-      "background": `url(./images/prof-bg/${[ppp]}.jpg)`,
+      "background": `url(./images/prof-bg1/${[ppp]}.jpg)`,
       "background-size": "cover",
       "background-position": "center",
       "background-repeat": "no-repeat"
