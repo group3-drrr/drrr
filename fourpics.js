@@ -151,7 +151,7 @@ $(document).ready(function () {
 
       $(this).css({
 
-        "background": `url(/images/fourpics/${k}/${l}.jpg)`,
+        "background": `url(./images/fourpics/${k}/${l}.jpg)`,
 
         "background-size": "cover",
 
