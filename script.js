@@ -270,7 +270,29 @@ $(document).ready(function () {
 
   })
 
+  $(".profile1").each(function () {
 
+    const ppp = $(this).index();
+
+    $(this).children(".prof-img-cont").children(".profile-img").css({
+      "background": `url(./images/prof-bg/${[ppp]}.jpg)`,
+      "background-size": "cover",
+      "background-position": "center",
+      "background-repeat": "no-repeat"
+    })
+
+
+
+    $(this).children(".profile-des").html(`${description[ppp]}`)
+
+    $(this).css({
+      "background-image": `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/backgrounds/${[ppp]}.jpg)`,
+      "background-size": "cover",
+      "background-position": "right",
+      "background-repeat": "no-repeat"
+    })
+
+  })
 
 
 
