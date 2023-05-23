@@ -10,8 +10,8 @@ $(document).ready(function () {
   const correct = {
     aa0: "tsunami",
     aa1: "rainfall",
-    aa2: "aliyah",
-    aa3: "what"
+    aa2: "earthquake",
+    aa3: "engineer"
   }
 
   $(".grid-item").click(function () {
