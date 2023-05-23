@@ -234,6 +234,7 @@ main {
 
 .next-btn {
   opacity: 1;
+  visibility: hidden;
 
 }
 
