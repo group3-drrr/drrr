@@ -4,9 +4,10 @@ $(document).ready(function () {
   const answers = {
 
 
-    a0: ["nigga", "africa", "slave"],
-    a1: ["dog", "water"],
-    a2: ["f", "g"]
+    a0: ["soil", "rocks"],
+    a1: ["earthquake"],
+    a2: ["intense", "rainfall"],
+    a3: ["warning", "signs"]
 
 
 
@@ -154,7 +155,7 @@ $(document).ready(function () {
         //   alert("k")
         blankArr = [];
 
-        $(this).parent().parent().find(".next-btn").css("opacity", "1")
+        $(this).parent().parent().find(".next-btn").css("opacity", "1").css("visibility", "visible")
         $(this).parent().parent().find(".next-btn").addClass("next")
       }
 
@@ -199,14 +200,14 @@ $(document).ready(function () {
 
   $(".next-btn").click(function () {
 
+    const lp = $(".next-btn").length;
+
     const ind = $(this).parent().parent().index()
 
-    if (ind == 0) {
-      $(".second").css('transform', 'translateX(-100%')
-    } else if (ind == 1) {
-      $(".second").css('transform', 'translateX(-200%')
+    if (ind != lp -1 ) {
+      $(".second").css('transform', `translateX(${-100 + (ind * -100)}%)`)
     } else {
-      alert("what")
+      alert(`no more questions`)
     }
 
 
@@ -215,15 +216,16 @@ $(document).ready(function () {
   })
   $(".prev-btn").click(function () {
 
+    const lp = $(".next-btn").length;
+
     const ind = $(this).parent().parent().index()
 
-    if (ind == 1) {
-      $(".second").css('transform', 'translateX(0)')
-    } else if (ind == 2) {
-      $(".second").css('transform', 'translateX(-100%')
-    } else {
-      alert("what")
+    if (ind != lp -1 ) {
+      $(".second").css('transform', `translateX(${(-100 * ind) + 100}%)`)
+    } else if (ind == lp -1) {
+      $(".second").css('transform', `translateX(${(-100 * ind) + 100}%)`)
     }
+      
 
 
 
